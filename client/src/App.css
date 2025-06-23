@@ -1,0 +1,187 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  cursor: pointer;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Card container for forms, feedback, etc. */
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 700px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+/* Headings */
+h1, h2 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+/* Paragraph */
+p {
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Inputs and Textarea */
+textarea, input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus, input:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+}
+
+/* Button */
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  width: 100%;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+button:disabled,
+button[disabled] {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Feedback box */
+.feedback {
+  background-color: #e0f2fe; /* Light blue background */
+  border: 2px solid #3b82f6; /* Tailwind blue-500 */
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  color: #1e40af; /* Tailwind blue-900 */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 180px;        /* Reserve space */
+  max-height: 320px;        /* Max height */
+  overflow-y: auto;         /* Scroll if too long */
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3); /* subtle glow */
+  transition: box-shadow 0.3s ease;
+  white-space: pre-wrap;
+}
+
+/* Hover or focus highlight for better UX */
+.feedback:hover,
+.feedback:focus-within {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
+}
+
+/* Scrollbar styling (Webkit browsers) */
+.feedback::-webkit-scrollbar {
+  width: 8px;
+}
+.feedback::-webkit-scrollbar-thumb {
+  background-color: #2563eb; /* Blue-600 */
+  border-radius: 4px;
+}
+.feedback::-webkit-scrollbar-track {
+  background-color: #bae6fd; /* Blue-200 */
+  border-radius: 4px;
+}
+
+/* Error messages */
+.error {
+  color: #dc2626;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  #root {
+    padding: 1rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .feedback {
+    min-height: 140px;
+    max-height: 240px;
+    font-size: 0.95rem;
+  }
+}

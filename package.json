@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mammoth": "^1.9.1",
+    "pdfjs-dist": "^2.16.105"
+  },
+  "devDependencies": {
+    "@types/pdfjs-dist": "^2.10.377"
+  }
+}
