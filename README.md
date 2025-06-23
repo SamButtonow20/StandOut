@@ -108,20 +108,9 @@ Contributions are welcome! Please open issues or pull requests.
 
 ---
 
-## License
-
-MIT License © \[Your Name]
-
----
-
 ## Contact
 
-* GitHub: [YourUsername](https://github.com/YourUsername)
-* Email: [your.email@example.com](mailto:your.email@example.com)
+* GitHub: [SamButtonow20](https://github.com/SamButtonow20)
+* Email: [sam.buttonow@gmail.com](mailto:sam.buttonow@gmail.com])
 
-```
-
----
-
-If you want, I can help you tailor it more specifically or add extra sections!
 ```
