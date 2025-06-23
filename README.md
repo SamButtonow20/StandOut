@@ -89,19 +89,6 @@ If you accidentally committed sensitive files like `.env` containing API keys, f
 
 ---
 
-## .gitignore
-
-Make sure your `.gitignore` includes:
-
-```
-.env
-node_modules/
-dist/
-build/
-```
-
----
-
 ## Contributing
 
 Contributions are welcome! Please open issues or pull requests.
